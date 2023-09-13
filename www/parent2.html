@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+		<script type="text/javascript" src="js/index.js"></script>
+		<script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+		<meta http-equiv="Content-Security-Policy" content="" >
+        <link rel="stylesheet" href="css/parent2.css">
+        <title>Parent Portal</title>
+    </head>
+    <body>
+        
+        
+        <div id="header">
+			<img src="img/logo.png" alt="application logo" id="logo" width="150" height="150">
+			<div id="title">
+			TrackerApp
+			</div>
+		</div>
+		
+		<div id="pagetitle">
+		<b>Parent Portal</b>
+		</div>
+       
+		<div id="filterarea">
+		Filter by Class:
+		
+		
+		
+		<select name="class_search" onChange="controller.findStudentAttendance()" id="class_search" class="field"> 
+			<option value="null">Please select a class</option>
+			<option value="1">Math</option> 
+			<option value="2">Science</option> 
+			<option value="3">Drama</option> 
+			<option value="4">Music</option> 
+			<option value="5">English</option> 
+			<option value="6">Design</option> 
+			<option value="7">Computing</option> 
+		</select>
+		
+		
+		
+		<div id="student_info">
+			Records will appear here when a class has been selected.
+		</div>
+		
+		
+		
+		
+		<!-- import relevant scripts -->
+		<script type="text/javascript" src="cordova.js"></script>
+		
+		
+    </body>
+</html>
